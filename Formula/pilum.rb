@@ -1,26 +1,26 @@
 class Pilum < Formula
-  desc "Multi-service deployment orchestrator"
+  desc "Multi-cloud deployment CLI - define once, deploy anywhere"
   homepage "https://github.com/SID-Technologies/pilum"
-  version "0.1.1"
-  license "MIT"
+  version "0.1.2"
+  license "BSL-1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/SID-Technologies/pilum/releases/download/v0.1.1/pilum_0.1.1_darwin_arm64.tar.gz"
-      sha256 "8373bae0504f66dc4fa20c72371d10323bde8b5225caeeea9f55b04b89f8ee2d"
+      url "https://github.com/SID-Technologies/pilum/releases/download/v0.1.2/pilum_v0.1.2_darwin_arm64.tar.gz"
+      sha256 "e15565115ecb92d2b4491d9d17816f32aad77968c1896ff41de13394bc65ce96"
     else
-      url "https://github.com/SID-Technologies/pilum/releases/download/v0.1.1/pilum_0.1.1_darwin_amd64.tar.gz"
-      sha256 "6f22ba6b7c254e9af8dd866a60c8421299d2cea19a29103deb0682cf0a6a1923"
+      url "https://github.com/SID-Technologies/pilum/releases/download/v0.1.2/pilum_v0.1.2_darwin_amd64.tar.gz"
+      sha256 "62e4876852343411e5c3bfa19239e56b3325d2f12106422702a94e7df1924c20"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/SID-Technologies/pilum/releases/download/v0.1.1/pilum_0.1.1_linux_arm64.tar.gz"
-      sha256 "86289c510c82e9b6a0d80dcf3e99c2aa3be5bc342127729f547686763605b709"
+      url "https://github.com/SID-Technologies/pilum/releases/download/v0.1.2/pilum_v0.1.2_linux_arm64.tar.gz"
+      sha256 "eb500da18fdc9505f7017df7bfff0c4b8616dc0c38a204a5139d8985cce72405"
     else
-      url "https://github.com/SID-Technologies/pilum/releases/download/v0.1.1/pilum_0.1.1_linux_amd64.tar.gz"
-      sha256 "952fe04c0257924e85483a8a44e73dd44e28474eedf515556685fe9c48627e15"
+      url "https://github.com/SID-Technologies/pilum/releases/download/v0.1.2/pilum_v0.1.2_linux_amd64.tar.gz"
+      sha256 "fda4930075a870fd28018b45b0cd9e87016e8aaadadd40850128f24770e2bf97"
     end
   end
 
@@ -29,6 +29,6 @@ class Pilum < Formula
   end
 
   test do
-    system "#{bin}/pilum", "--help"
+    system "#{bin}/pilum", "--version"
   end
 end
