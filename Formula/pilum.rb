@@ -25,7 +25,7 @@ class Pilum < Formula
   end
 
   def install
-    bin.install Dir["pilum_*"].first => "pilum"
+    bin.install "pilum"
   end
 
   test do
