@@ -1,26 +1,26 @@
 class Pilum < Formula
   desc "Multi-cloud deployment CLI - define once, deploy anywhere"
   homepage "https://github.com/SID-Technologies/pilum"
-  version "0.8.0"
+  version "0.9.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/SID-Technologies/pilum/releases/download/v0.8.0/pilum_v0.8.0_darwin_arm64.tar.gz"
-      sha256 "fc81f6b4f8052c1d5bbf588e7ca00f5e5a8f33da53e2ca5fd7793116fb7bb481"
+      url "https://github.com/SID-Technologies/pilum/releases/download/v0.9.0/pilum_v0.9.0_darwin_arm64.tar.gz"
+      sha256 "15c7cdb2bfaa101d77422bca823214bd801df0afadf8440985671f806473dab9"
     else
-      url "https://github.com/SID-Technologies/pilum/releases/download/v0.8.0/pilum_v0.8.0_darwin_amd64.tar.gz"
-      sha256 "3baad38a7c39411ddeb676e5bb504a7750fe042fc92d88c4ad1a65d185947019"
+      url "https://github.com/SID-Technologies/pilum/releases/download/v0.9.0/pilum_v0.9.0_darwin_amd64.tar.gz"
+      sha256 "e3c54b77350db0b84ea4982be1dc89eb27917cff1b9dfd223bf92144a48353eb"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/SID-Technologies/pilum/releases/download/v0.8.0/pilum_v0.8.0_linux_arm64.tar.gz"
-      sha256 "0d2e4ccad8ffcf0c550d9a2557a3f8d5e3476366bf88ced00df27a90d4df4e78"
+      url "https://github.com/SID-Technologies/pilum/releases/download/v0.9.0/pilum_v0.9.0_linux_arm64.tar.gz"
+      sha256 "e301725039cddd395a9d3fdf610197cd3e0649372c0fc2def930069ba542d7ca"
     else
-      url "https://github.com/SID-Technologies/pilum/releases/download/v0.8.0/pilum_v0.8.0_linux_amd64.tar.gz"
-      sha256 "74506a97d3a4595a2fbbd35e1399ff543ce7130f9dc36e4cc937ed9e92c75011"
+      url "https://github.com/SID-Technologies/pilum/releases/download/v0.9.0/pilum_v0.9.0_linux_amd64.tar.gz"
+      sha256 "26cbe013bc6cae8c74cbf24190ed0df998c30bf9359d8b0b88301c7373186200"
     end
   end
 
